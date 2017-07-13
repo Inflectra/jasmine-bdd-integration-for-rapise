@@ -2,14 +2,14 @@
 
 Integration of Rapie with Jasmine BDD Framework.
 
-## init.js
+## Jasmine\init.js
 This file contains stubs that make Jasmine thinking it is loaded into a browser.
 
-## boot.js
+## Jasmine\boot.js
 This is a customized version of default `boot.js` file included into Jasmine distribution. We removed HtmlReporter and load RapiseReporter instead. 
 
 ## RapiseReporter
-This reporter implements all 6 handlers defined in `jasmine.js`:
+This reporter implements all six handlers defined in `jasmine.js`:
 
 ```
 jasmineStarted, jasmineDone, suiteStarted, suiteDone, specStarted, specDone
