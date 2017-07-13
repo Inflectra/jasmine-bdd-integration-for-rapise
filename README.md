@@ -20,6 +20,51 @@ This is a customized version of default `boot.js` file included into Jasmine dis
 ## CalculatorTest
 Example of testing Windows Calculator using BDD approach.
 
+### Code Highlights
+```javascript
+describe("Calculator", function() 
+{
+	var calculator;
+	
+	beforeEach(function() 
+	{
+		calculator = new Calculator();
+		calculator.Launch();
+	});
+	
+	afterEach(function() 
+	{
+		calculator.Close();
+	});
+	
+	it("should be visible on screen", function() 
+	{
+		expect(calculator.isVisible()).toEqual(true);
+	});
+	
+	describe("Sum Module", function() 
+	{
+		it("should calculate 2 + 2", function() 
+		{
+			expect(calculator.Add(2, 2)).toEqual("4");
+		});
+		
+		it("should fail for demo purposes", function() 
+		{
+			expect(false).toEqual(true);
+		});
+	});
+	
+	describe("Multiplication Module", function() 
+	{
+		it("should calculate 2 * 2", function() 
+		{
+			expect(calculator.Multiply(2, 2)).toEqual("4");
+		});
+	});
+});
+```
+
 ### Report Example
 If Rapise report is viewed in hierarchical mode then Jasmine suites form a tree and specs become leaves of the tree. Every report line produced by Jasmine is prefixed with `#`.
 
