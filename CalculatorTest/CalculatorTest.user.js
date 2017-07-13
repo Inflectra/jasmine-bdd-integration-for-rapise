@@ -1,5 +1,8 @@
 //Put your custom functions and variables in this file
 
+if (!g_recording)
+{
+
 eval(File.IncludeOnce('%WORKDIR%/../Jasmine/init.js'));
 
 with(window)
@@ -9,4 +12,6 @@ with(window)
 	
 	eval(File.IncludeOnce('%WORKDIR%/Calculator.js'));
 	eval(File.IncludeOnce('%WORKDIR%/CalculatorSpec.js'));
+}
+
 }

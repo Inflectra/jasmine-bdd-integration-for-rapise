@@ -27,12 +27,44 @@
     <FilterPath />
     <Groups>
       <TestGroup>
+        <Name>Jasmine</Name>
+        <IsFilterGroup>false</IsFilterGroup>
+        <FilterWildcard>*.*</FilterWildcard>
+        <FilterPath />
+        <Groups />
+        <TestFiles>
+          <TestFile>
+            <Path>C:\Work\Inflectra\InflectraGitProjects\jasmine-bdd-integration-for-rapise\Jasmine\boot.js</Path>
+          </TestFile>
+          <TestFile>
+            <Path>C:\Work\Inflectra\InflectraGitProjects\jasmine-bdd-integration-for-rapise\Jasmine\init.js</Path>
+          </TestFile>
+          <TestFile>
+            <Path>C:\Work\Inflectra\InflectraGitProjects\jasmine-bdd-integration-for-rapise\Jasmine\jasmine.js</Path>
+          </TestFile>
+        </TestFiles>
+      </TestGroup>
+      <TestGroup>
+        <Name>Reports</Name>
+        <IsFilterGroup>true</IsFilterGroup>
+        <FilterWildcard>*.trp</FilterWildcard>
+        <FilterPath>Reports</FilterPath>
+        <Groups />
+        <TestFiles />
+      </TestGroup>
+      <TestGroup>
         <Name>Scripts</Name>
         <IsFilterGroup>false</IsFilterGroup>
         <FilterWildcard>*.*</FilterWildcard>
         <FilterPath />
         <Groups />
         <TestFiles>
+          <TestFile>
+            <Path>Calculator.js</Path>
+          </TestFile>
+          <TestFile>
+            <Path>CalculatorSpec.js</Path>
+          </TestFile>
           <TestFile>
             <Path>CalculatorTest.js</Path>
           </TestFile>
@@ -45,10 +77,20 @@
         </TestFiles>
       </TestGroup>
     </Groups>
-    <TestFiles />
+    <TestFiles>
+      <TestFile>
+        <Path>%ENGINE%\Engine.sstest</Path>
+      </TestFile>
+    </TestFiles>
   </TestFiles>
   <CustomStrings />
-  <TestParams />
+  <TestParams>
+    <TestParam name="Record Title" variable="g_rWnd" defaultValue="Calculator" description="Application Title to Record" output="false" ask="false">
+      <PossibleValues>
+        <string>Calculator</string>
+      </PossibleValues>
+    </TestParam>
+  </TestParams>
   <Methodology>Basic</Methodology>
   <MethodologyOptions>
     <ArrayOfObjectParam />
