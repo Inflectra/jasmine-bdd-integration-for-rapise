@@ -77,11 +77,7 @@
         </TestFiles>
       </TestGroup>
     </Groups>
-    <TestFiles>
-      <TestFile>
-        <Path>%ENGINE%\Engine.sstest</Path>
-      </TestFile>
-    </TestFiles>
+    <TestFiles />
   </TestFiles>
   <CustomStrings />
   <TestParams>
