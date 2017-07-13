@@ -19,3 +19,8 @@ This is a customized version of default `boot.js` file included into Jasmine dis
 
 ## CalculatorTest
 Example of testing Windows Calculator using BDD approach.
+
+### Report Example
+If Rapise report is viewed in hierarchical mode then Jasmine suites form a tree and specs become leaves of the tree. Every report line produced by Jasmine is prefixed with `#`.
+
+<img src="https://github.com/Inflectra/jasmine-bdd-integration-for-rapise/raw/master/Media/CalculatorTestReport.png" width="911"/>
